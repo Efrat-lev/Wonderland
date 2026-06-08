@@ -64,7 +64,11 @@ print(f"The exact input required is: {flag}")
 
 **תוצאה:** הסיסמה המחושבת היא `(,&.a6:$a03##+&a)->$`. הזנת הסיסמה בתוכנית החזירה אימות מוצלח.
 
+</div>
+
 ---
+
+<div dir="rtl">
 
 ## Level 3 - 
 
