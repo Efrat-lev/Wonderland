@@ -1,14 +1,7 @@
 
 <div dir="rtl">
 
-# Wonderland – Write Up
-
-| Author | Efrat Levenberg |
-| --- | --- |
-| Challenge | Wonderland.exe (Levels 2 & 3) |
-| Category | Reverse Engineering - Static Analysis |
-
-## Level 2 - The XOR Cipher
+## Level 2 - 
 
 **מטרה:** עקיפת מנגנון האימות של השלב השני בתוכנית על ידי ניתוח אלגוריתם ההצפנה.
 
@@ -67,7 +60,7 @@ print(f"The exact input required is: {flag}")
 
 ---
 
-## Level 3 - The Array Judge
+## Level 3 - 
 
 **מטרה:** ניתוח פונקציית אימות המתבססת על שליפת נתונים ממערך סמוי, במטרה למצוא את רצף המספרים הנכון לעקיפתה.
 
