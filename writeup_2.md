@@ -28,6 +28,8 @@ You know what? That was too easy. *Now* tell me the second password.
 
 **פסאודו-קוד של הלוגיקה:**
 
+<div dir="ltr" align="left">
+
 ```text
 key = "ABRA"
 for (i = 0; i < len(input); i+=4):
@@ -37,11 +39,14 @@ if (input == "into the rabbit hole"):
     print("Correct! you may enter..")
 
 ```
+</div>
 
 **פיצוח:**
 מכיוון שפעולת XOR מול אותו מפתח מבטלת את עצמה (Involution), הפעלתי סקריפט Python שלוקח את מחרוזת היעד ומבצע עליה XOR מול המפתח "ABRA" כדי לשחזר את הקלט המקורי הנדרש.
 
 **סקריפט Python:**
+
+<div dir="ltr" align="left">
 
 ```python
 target = "into the rabbit hole"
@@ -55,6 +60,7 @@ for i in range(len(target)):
 print(f"The exact input required is: {flag}")
 
 ```
+</div>
 
 **תוצאה:** הסיסמה המחושבת היא `(,&.a6:$a03##+&a)->$`. הזנת הסיסמה בתוכנית החזירה אימות מוצלח.
 
@@ -92,6 +98,8 @@ print(f"The exact input required is: {flag}")
 
 **פסאודו-קוד של פונקציית ה-Judge:**
 
+<div dir="ltr" align="left">
+
 ```text
 secret_array = [7, 33, 1, -600, -5000, 1777, 13, 69]
 prev_val = secret_array[input[0]]
@@ -105,11 +113,14 @@ for i from 1 to 7:
 return SUCCESS
 
 ```
+</div>
 
 **פיצוח:**
 כדי שהנתונים יישלפו בסדר עולה מהקטן ביותר (-5000) לגדול ביותר (1777), כתבתי סקריפט פייתון שקורא את המערך המקורי, ממיין אותו לפי הערכים, ומחזיר את האינדקסים המקוריים לפי הסדר הממוין.
 
 **סקריפט Python:**
+
+<div dir="ltr" align="left">
 
 ```python
 secret = [7, 33, 1, -600, -5000, 1777, 13, 69]
@@ -122,6 +133,8 @@ solution = [idx for val, idx in indexed_array]
 print(f"The required index sequence is: {solution}")
 
 ```
+</div>
 
 **תוצאה:** סדר האינדקסים הנדרש הוא: `4, 3, 2, 0, 6, 1, 7, 5`. הזנת המספרים הובילה להודעת הניצחון.
+
 </div>
