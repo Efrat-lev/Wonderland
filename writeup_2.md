@@ -66,6 +66,8 @@ print(f"The exact input required is: {flag}")
 
 **תוצאה:** הסיסמה המחושבת היא `(,&.a6:$a03##+&a)->$`. הזנת הסיסמה בתוכנית החזירה אימות מוצלח.
 
+![Level 2 Success](images/l2_success.png)
+
 ---
 
 
@@ -148,3 +150,5 @@ print(f"The required index sequence is: {solution}")
 </div>
 
 **תוצאה:** סדר האינדקסים הנדרש הוא: `4, 3, 2, 0, 6, 1, 7, 5`. הזנת המספרים הובילה להודעת הניצחון.
+
+![Level 3 Success](images/l3_success.png)
