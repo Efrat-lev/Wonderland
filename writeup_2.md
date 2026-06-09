@@ -108,7 +108,7 @@ print(f"The exact input required is: {flag}")
 ![Hex View Data](images/l3_hex_view.png)
 
 חילצתי את 8 האיברים (Word = 2 Bytes), המרתי אותם מ-Little Endian, והתייחסתי לסיבית הסימן כפי שהורתה פקודת ה-movsx. התקבל המערך הבא:
-`[7, 33, 1, -600, -5000, 1777, 13, 69]`
+<span dir="ltr">`[7, 33, 1, -600, -5000, 1777, 13, 69]`</span>
 
 **פסאודו-קוד של פונקציית ה-Judge:**
 
