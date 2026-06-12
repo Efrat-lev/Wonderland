@@ -1,11 +1,16 @@
+// Assignment 2 - rect.exe reverse engineering
+// Submitted by: Efrat Levenberg
+
 #include <stdio.h>
 #include <stdlib.h>
 
+// Declared as __stdcall because the original assembly uses 'retn 0Ch' to clean the stack parameters.
 void __stdcall drawRectangle(int base, int height, char* block) {
     int index = 0; 
 
     for (int i = height; i > 0; i--) {
         for (int j = base; j > 0; j--) {
+            // Frame condition: print '*' on the first/last rows and columns, otherwise print ' '.
             if (i == height || i == 1 || j == base || j == 1) {
                 block[index] = '*'; 
             } else {
@@ -31,6 +36,7 @@ int __cdecl main() {
     printf("Enter height: ");
     scanf("%d", &height);
 
+    // Calculating required buffer size: (base width + 1 for '\n') * height, plus 1 for the null terminator.
     size = ((base + 1) * height) + 1;
 
     block = (char*)malloc(size);
